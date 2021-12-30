@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>
+        My App
+    </title>
+
+    <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+
+<body>
+
+    This is a web app... not a website
+</body>
+
+        <p id = "tryingsomething"></p>
+
+        <script>
+            d3.json("/data", function(data) {
+                jsondata = data})
+                document.getElementById("tryingsomething").innerHTML = jsondata
+        </script>
+
+
+</html>
